@@ -1,0 +1,15 @@
+#bar{
+    flex-direction: column;
+}
+#home{
+    height: 344px;
+}
+#home::before{
+height: 547px;
+}
+#services{
+    flex-direction: column;
+}
+#clients{
+    flex-direction: column;
+}

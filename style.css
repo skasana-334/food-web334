@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+ #bar{
+     position:relative;/* if it is not hre then befor pseudo selector take width and height of initial nav bar content height */
+    display: flex;
+    align-items: center; 
+    /* top: 0; */
+    /* justify-content: space-between; to put home and all at left side*/
+}
+#bar #logo{
+    margin: 2px 10px;
+}
+#logo img{
+    margin: 4px 15px;
+    height: 70px;
+}
+#bar ul{
+    display: flex;
+} 
+ #bar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+li a{
+    display: block;
+    padding: 20px 15px;
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(142, 231, 231);
+    border-radius: 8px;}
+#bar::before{
+    content: "";
+    /* it  is child of nav bar s it will take width and height according to it*/
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+background-color:rgb(190, 221, 190);
+position: absolute;
+z-index: -1;
+opacity: 0.4;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    height: 320px;
+justify-content: center;
+align-items: center;
+}
+#home::before{
+    content: "";
+    height: 400px;
+width: 100%;
+background: url("https://www.fao.org/images/homepagelibraries/default-album/sdg-2.png") no-repeat center center/cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+opacity: 0.89;
+}
+ h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;}
+.heading p{
+    text-align: center;
+    color: black;
+    padding:10px;
+    /* font-size: 1.3rem; */
+    font-family: 'Roboto Mono', monospace;
+}
+button{
+    color: rgb(51, 12, 12);
+    background-color:rgb(168, 118, 118);
+    margin: 10px;
+    padding: 0px 16px;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 5px;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+#container{
+  margin: 50px auto 20px auto;
+}
+.heads{
+    color: black;
+}
+.center{
+   text-align: center;
+}
+.head1{
+    padding: 10px;
+}
+ .box{
+    border: 2px solid brown;
+    padding: 34px; 
+     margin: 3px 20px ;
+    border-radius: 28px;
+    background: #f2f2f2;
+    /* margin-bottom: 20px; */
+ 
+}
+.box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+
+#services{
+    display: flex;
+    margin: 15px;
+}
+#customers{
+    position: relative;
+}
+
+#customers::before{
+    content: "";
+    height: 100%;
+width: 100%;
+background: url("https://assets.ncr.com/content/ncr/us/en/home/blogs/restaurants/it-outsourcing-customer-experience/_jcr_content/root/container/container_238116401_/container_1439208595/container_copy/image.coreimg.90.1000.jpeg/1613691838732/employee-hands-customers-their-meals.jpeg") no-repeat center center/cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c1{
+    padding: 24px; 
+     margin: 10px ; 
+}
+
+.c1 img{
+    height: 150px;
+border-radius: 100%;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    height: 100%;
+width: 100%;
+background: url("https://media.istockphoto.com/photos/contact-us-picture-id1049658692?k=20&m=1049658692&s=612x612&w=0&h=z3sXVbzDit8RKnsC0ihEuFub42FqfmbRcP4vWHOKLK4=") no-repeat center center/cover;
+position: absolute;
+z-index: -1;
+opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box input,textarea{
+    width: 100%;
+    padding: 3px;
+    border: 2px solid red;
+  
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    color: blueviolet;
+    background-color: black;
+}
