@@ -4,7 +4,8 @@
 } 
 
  #bar{
-     position:relative;/* if it is not hre then befor pseudo selector take width and height of initial nav bar content height */
+     position:sticky;/* if it is not hre then befor pseudo selector take width and height of initial nav bar content height */
+     top:0;/*if u want to use sticky u have to set any one to left.. to some value*/
     display: flex;
     align-items: center; 
     /* top: 0; */
