@@ -10,6 +10,9 @@ height: 547px;
 #services{
     flex-direction: column;
 }
+#khana{
+    width: 40%;
+    }
 #clients{
     flex-direction: column;
 }
